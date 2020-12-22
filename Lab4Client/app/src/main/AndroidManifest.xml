@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lab4client">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lab4Client">
+        <activity
+            android:name=".RegisterActivity"
+            android:launchMode="singleTask"
+            android:label="注册" />
+        <activity
+            android:name=".AddPerson"
+            android:launchMode="singleTask"
+            android:label="添加联系人" />
+        <activity
+            android:name=".ForgetActivity"
+            android:launchMode="singleTask"
+            android:label="找回密码"/>
+        <activity
+            android:name=".ChangePass"
+            android:launchMode="singleTask"
+            android:label="修改密码"/>
+        <activity
+            android:name=".WelcomeActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label="首页"/>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label="我们仨">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

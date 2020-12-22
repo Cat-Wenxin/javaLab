@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:padding="10dp"
+    android:background="@drawable/bg1">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/touxiang"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/morning_bg"
+        android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/blank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/touxiang"
+            android:layout_centerInParent="true"
+            android:text=" "
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/nav_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/blank"
+            android:layout_centerInParent="true"
+            android:text="笨手笨脚"
+            android:textColor="#fff"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/nav_teleno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/nav_username"
+            android:text="Tel:18570779300"
+            android:textColor="#fff"
+            android:textSize="18sp"/>
+
+</RelativeLayout>
